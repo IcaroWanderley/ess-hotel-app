@@ -1,8 +1,3 @@
-* {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
 #main{
     background-image: url("../../../assets/images/image\ 8.png");
     background-size: cover;
@@ -11,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+
 }
 
 #background {
@@ -85,5 +80,18 @@
   justify-content: center;
   color: rgb(0, 0, 0);
   text-decoration: none;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+html {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
