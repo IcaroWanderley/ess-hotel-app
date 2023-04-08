@@ -1,46 +1,55 @@
 .my-nav-class {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: rgba(23, 22, 20, 0.04) 0px 12px 24px;
-    backdrop-filter: blur(10px);
+  display: grid;
+  height: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: rgba(23, 22, 20, 0.04) 0px 12px 24px;
+  backdrop-filter: blur(10px);
 
-    a:nth-child(1) {
-        justify-self: left;
-    }
+  a:nth-child(1) {
+    justify-self: left;
+    font-size: 28px;
+  }
 
-    a:nth-child(2) {
-        justify-self: center;
-    }
+  a:nth-child(2) {
+    justify-self: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+  }
 
-    div:nth-child(3) {
-        justify-self: right;
+  div:nth-child(3) {
+    justify-self: right;
+
+    a {
+      font-size: 28px;
     }
+  }
 }
 
 .nav-text {
-    --border-color: black;
-    --border-width: 3px;
-    --bottom-distance: 0px;
+  --border-color: black;
+  --border-width: 3px;
+  --bottom-distance: 0px;
 
-    display: inline;
-    color: black;
-    background-image: linear-gradient(var(--border-color), var(--border-color));
-    background-size: 0% var(--border-width);
-    background-repeat: no-repeat;
-    background-position: 0 calc(100% - var(--bottom-distance));
-    transition: background-size 0.5s;
-    text-decoration: none;
+  display: inline;
+  color: black;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  background-position: 0 calc(100% - var(--bottom-distance));
+  transition: background-size 0.5s;
+  text-decoration: none;
+  font-family: "NATS-Regular";
 
-    &:hover {
-        cursor: pointer;
-        background-size: 100% var(--border-width);
-    }
+  &:hover {
+    cursor: pointer;
+    background-size: 100% var(--border-width);
+  }
 }
 
-/*nav-tex:hover {}*/
-
 .nav-links-container {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }

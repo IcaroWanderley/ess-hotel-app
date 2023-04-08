@@ -1,4 +1,10 @@
+.page-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
 app-navbar {
-    position: absolute;
-    width: 100vw;
+  position: absolute;
+  max-width: 1920px;
+  width: 100vw;
 }

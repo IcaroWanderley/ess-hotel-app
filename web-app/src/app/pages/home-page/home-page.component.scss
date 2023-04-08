@@ -1,36 +1,40 @@
-#main{
-    background-image: url("../../../assets/images/image\ 8.png");
-    background-size: cover;
+#main {
+  background-image: url("../../../assets/images/image\ 8.png");
+  background-size: cover;
 
-    height: 100vh;
-    width: 100vw;
-    max-width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
-#main div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+#main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 #main div p,
-#main div .header{
-    color: #FFFFFF;
-    text-shadow: 4px 4px 4px #000000;
+#main div .header {
+  color: #ffffff;
+  text-shadow: 4px 4px 4px #000000;
+  font-family: "NATS-Regular";
 }
 
-#main div p{
-    font-size: 4.4vh;
+#main div p {
+  font-family: "NATS-Regular";
+  font-size: 4.4vh;
 }
 
-#main div .header{
-    margin: 3vw auto;
-    font-size: 11.85vh;
-    line-height: 100px;
+#main div .header {
+  font-family: "NATS-Regular";
+  margin: 3vw;
+  font-size: 11.85vh;
+  line-height: 100px;
 }

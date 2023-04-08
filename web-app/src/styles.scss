@@ -1,7 +1,13 @@
-@font-face{
-  font-family: NATS;
-  src: url(assets/Fonts/NATS-Regular.ttf);
+@use "@angular/material" as mat;
+
+@font-face {
+  font-family: "NATS-Regular";
+  src: url(assets/fonts/NATS-Regular.ttf);
 }
+
+$my-custom-typography: mat.define-typography-config(
+  $font-family: "NATS-Regular",
+);
 
 html,
 body {
@@ -10,5 +16,5 @@ body {
 }
 body {
   margin: 0;
-  font-family: NATS, Roboto, "Helvetica Neue", sans-serif;
+  font-family: "NATS-Regular";
 }
