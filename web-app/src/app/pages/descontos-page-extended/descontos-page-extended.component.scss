@@ -10,14 +10,15 @@
 
 #background{
     position: absolute;
-    width: 90%;
-    max-width: 1758px;
-    height: 850px;
+    width: 200vh;
+ 
+    height: 100vh;
     left: 5%;
     top: 10%;
 
     background: rgba(255, 255, 255, 0.87);
     border-radius: 10%;
+    overflow: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -33,4 +34,49 @@
     left: 0;
     border-radius: 0;
   }
+}
+
+
+//.card {
+//  border: 1px solid #ce0808;
+//  border-radius: 5px;
+ // margin-bottom: 20px;
+//}
+.containergeral{
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 50px;
+  margin-right: 37px;
+
+}
+.card-img-top {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 5px;
+  
+}
+
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ff001e;
+  border-color: #ff0000;
+}
+.card1 {
+  
+  top: 5%;
+  width: 50%;
+  height: 50%;
+}
+.card2{
+  
+  width: 50%;
+  height: 30%;
 }

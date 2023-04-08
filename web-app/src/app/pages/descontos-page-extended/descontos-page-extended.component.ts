@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-descontos-page-extended',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./descontos-page-extended.component.scss']
 })
 export class DescontosPageExtendedComponent {
-
+  @Input() hotelName?: string;
+  @Input() location?: string;
+  @Input() price: number = 0;
+  @Input() imageUrl?: string;
 }
