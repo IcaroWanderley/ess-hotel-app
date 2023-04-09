@@ -1,1 +1,82 @@
-<p>atracao-page works!</p>
+<div class="atracao-page">
+  <div class="overlay" *ngIf="isDrawbarVisible">
+    <section id="reviews-page">
+      <button class="close-reviews-button" (click)="closeDrawbar()">X</button>
+
+      <app-user-evaluation></app-user-evaluation>
+
+    </section>
+  </div>
+
+  <div class="atracoes-container">
+
+    <div class="atracoes-content">
+      <mdb-carousel [indicators]="true" [interval]="5000">
+        <mdb-carousel-item>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="..." />
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="..." />
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="..." />
+        </mdb-carousel-item>
+      </mdb-carousel>
+      <div class="atracoes-details">
+        <div class="atracoes-first-column">
+          <h1>Passeio de 1 dia com almoço em Angra dos Reis</h1>
+          <span>Um passeio para descobrir a costa e fazer um passeio de barco pelas
+            ilhas locais
+          </span>
+          <div class="diviser"></div>
+          <p>
+            Este passeio lhe dará a oportunidade de viajar para a cidade litorânea
+            de Angra dos Reis e explorar a baía.
+          </p>
+          <p>
+            Você partirá do Rio de Janeiro e fará um passeio de carro pela Costa
+            Verde. Ao chegar em Angra dos Reis, você irá até o porto, onde poderá
+            embarcar em um cruzeiro de barco de 4 horas ao redor da Ilha Grande.
+            Você vai parar em 3 locais deslumbrantes para nadar e fazer mergulho
+            com snorkel nas águas cristalinas e descobrir seus habitantes
+            marinhos.
+          </p>
+          <p>
+            Durante o cruzeiro, você também terá a oportunidade de conhecer a
+            história da ilha e da baía. O capitão ancorará em uma pequena ilha,
+            onde você poderá almoçar em um restaurante acolhedor. No final do
+            passeio, você voltará ao porto de Angra dos Reis e seguirá para o Rio
+            de Janeiro.
+          </p>
+        </div>
+        <div class="atracoes-second-column">
+          <div class="atracoes-info">
+            <h1>Horário e Local</h1>
+            <div class="info-and-icon">
+              <img src="assets/images/Hour-Icon.svg" />
+              <div class="text-container">
+                <p>Segunda, 13 de fevereiro de 2023</p>
+                <p>Início: 07:00</p>
+              </div>
+            </div>
+            <div class="info-and-icon">
+              <img src="assets/images/Location-Icon.svg" />
+              <p>
+                Hotel Rio Othon Palace, 5º floor, Av. Atlântica 3264, Copacabana,
+                Rio de Janeiro, 22070-001
+              </p>
+            </div>
+          </div>
+          <div class="atracoes-review">
+            <h1>Avaliações</h1>
+            <div class="info-and-icon">
+              <img src="assets/images/Like-Icon.svg" height="20px" width="20px" />
+              <p>90% curtiram isso de acordo com 42 avaliações</p>
+            </div>
+            <p class="see-reviews" (click)="openDrawbar()">Ver todas as Avaliações</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

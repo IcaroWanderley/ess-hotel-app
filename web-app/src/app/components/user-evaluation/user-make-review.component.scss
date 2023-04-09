@@ -1,0 +1,109 @@
+.make-review-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    background-color: #F8F8F8;
+}
+
+.back-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    //background-color: #777777;
+    //padding: 20px;
+}
+
+.back-arrow button{
+    margin-left: 40px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 200;
+    background-color: #ededed;
+    color: #979696;
+    
+}
+
+.back-arrow button:hover{
+    background-color: #d0d0d0;
+    cursor: pointer;
+}
+
+.mk-rv-main-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mk-rv-main-header img,
+.mk-rv-main-header .mk-rv-texto-header{
+
+    margin: 10px;
+}
+
+.mk-rv-texto-header{
+    line-height: 0px;
+    margin-right: 30px;
+}
+
+.make-review{
+    padding-top: 30px;
+}
+
+.make-evaluation-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.make-evaluation-header .user-data{
+    display: flex;
+    flex-direction: row;
+}
+
+.evaluation-form{
+    margin-left: 158px;
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluation-form button{
+    right: 0;
+    height: 5vh;
+    min-height: 35px;
+    max-height: 53px;
+    width: 8.13vw;
+    min-width: 104px;
+    max-width: 156px;
+
+    margin-top: 20px;
+
+    background-color: rgba($color: #0022D7, $alpha: 0.85);
+    border: none;
+    border-radius: 6px;
+}
+
+.evaluation-form button:hover{
+    background-color: rgba($color: #2f46c8, $alpha: 0.85);
+    cursor: pointer;
+}
+
+#written-evaluation{
+    resize: none;
+    border-radius: 5px;
+    width: 28.1vw;
+    min-width: 360px;
+    max-width: 540px;
+}
+
+.rating h3{
+    margin: 25px 0px 0px;
+}
+
+igc-rating::part(symbols){
+    color: rgba($color: #e1d900, $alpha: 1.0);
+}

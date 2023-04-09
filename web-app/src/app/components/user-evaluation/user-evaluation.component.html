@@ -1,1 +1,137 @@
-<p>user-evaluation works!</p>
+<div class="reviews-drawbar">
+
+    <div *ngIf="!createReview" class="see-reviews-drawer">
+        <header class="reviews-header">
+
+            <div class="main-header">
+                <h1>Avaliações</h1>
+
+                <div class="atraction-rating">
+                    <img src="../../../assets/images/Gold_Star.svg" alt="Estrela" class="star">
+
+                    <p>4.7 / 5 (33 reviews)</p>
+                </div>
+            </div>
+
+            <div class="header-options">
+                <button class="create-evaluation" (click)="openCloseReview()">Avaliar Atração</button>
+
+                <!--
+                    <div class="sort-comments">
+
+                        <p>Ordenar por: </p>
+
+                        <select name="sort-select" id="sort-select">
+                            <option value="1">Mais relevantes</option>
+                            <option value="2">Mais recente</option>
+                            <option value="3">Mais antigo</option>
+                        </select>
+                    </div>
+                    -->
+            </div>
+        </header>
+        <div class="reviews-list">
+
+            <div class="user-evaluation" *ngFor="let review of reviews">
+                <header class="evaluation-header">
+
+                    <div class="user-photo">
+                        <img src="https://placedog.net/54/54" alt="">
+                    </div>
+
+                    <div class="user-information">
+                        <p class="user-name"> {{review.nome}} </p>
+                        <div class="stars">
+                            <img src="../../../assets/images/Gold_Star.svg" alt="Estrela" class="star">
+                        </div>
+                        <p class="user-country"> {{review.country}} </p>
+                    </div>
+
+                </header>
+
+                <div class="evaluation-body">
+                    <p class="user-comment">{{review.comment}}</p>
+
+                    <p class="comment-date">Avaliação feita em {{review.date_of_comment.day}} de
+                        {{review.date_of_comment.month}} de {{review.date_of_comment.year}}</p>
+
+                    <!--  
+                            <div class="helpfulness">
+                            <img src="../../../assets/images/thumb-up.png" alt="thumbs-up">
+                            <p>Útil ?</p>
+                        </div>
+                        -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="createReview" class="make-review-page">
+        <header class="make-review-header">
+
+            <div class="mk-rv-main-header">
+                <img src="../../../assets/images/Gold_Star.svg" alt="" class="star mk-rv-star">
+                <div class="mk-rv-texto-header">
+                    <h2>Passeio de 1 dia com almoço em angra dos reis</h2>
+                    <p>Avalie este passeio</p>
+                </div>
+            </div>
+
+            <div class="back-arrow">
+                <button (click)="openCloseReview()">
+                    < </button>
+                        <!-- <img src="../../../assets/images/iconmonstr-arrow-left-thin.svg" alt=""> -->
+            </div>
+
+        </header>
+        <div class="make-review">
+            <header class="make-evaluation-header">
+
+                <div class="user-data">
+                    <div class="user-photo">
+                        <img src="https://placedog.net/54/54" alt="">
+                    </div>
+
+                    <div class="user-information">
+                        <p class="user-name">José</p>
+                        <p class="user-country">Brasil</p>
+                    </div>
+                </div>
+
+
+                <form action="" method="post" class="evaluation-form">
+
+                    <div class="overall-rating rating">
+                        <h3>Avaliação geral : </h3>
+                        <igc-rating name="ratingValue" [value]="ratingValue" min="1" max="5" hover-preview></igc-rating>
+                    </div>
+
+
+                    <textarea name="avaliacao_escrita" id="written-evaluation" cols="50" rows="4" maxlength="100"
+                        placeholder="Descreva sua experiência (opcional)"></textarea>
+
+                    <div class="limpeza-rating rating">
+                        <h3>Limpeza : </h3>
+                        <igc-rating [value]="ratingCleanValue" min="1" max="5" hover-preview></igc-rating>
+                    </div>
+
+                    <div class="security-rating rating">
+                        <h3>Segurança : </h3>
+                        <igc-rating [value]="ratingSecurityValue" min="1" max="5" hover-preview></igc-rating>
+                    </div>
+
+                    <div class="funny-rating rating">
+                        <h3>Diversão : </h3>
+                        <igc-rating [value]="ratingFunnyValue" min="1" max="5" hover-preview></igc-rating>
+                    </div>
+
+
+                    <button>Postar</button>
+                </form>
+
+            </header>
+        </div>
+    </div>
+</div>

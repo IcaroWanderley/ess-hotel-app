@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./hotel-card.component.scss']
 })
 export class HotelCardComponent {
-  @Input() hotelName?: string;
-  @Input() location?: string;
-  @Input() price?: string| undefined;
-  @Input() imageUrl?: string;
+  @Input() hotelName?: string | undefined;
+  @Input() location?: string| undefined;
+  @Input() price?: string | undefined;
+  @Input() imageUrl?: string| undefined;
 }

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./atracao-page.component.scss']
 })
 export class AtracaoPageComponent {
+  isDrawbarVisible: boolean = false;
 
+  openDrawbar(): void{
+    this.isDrawbarVisible = true;
+  }
+
+  closeDrawbar(): void{
+    this.isDrawbarVisible = false;
+  }
 }

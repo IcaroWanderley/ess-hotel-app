@@ -1,0 +1,136 @@
+.atracoes-container {
+  width: 100vw;
+  max-width: 1140px;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin: auto;
+
+  z-index: 1;
+}
+
+.atracoes-content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 24px;
+  background-color: white;
+  border: 2px solid #ced0d4;
+  border-radius: 8px;
+  box-shadow: rgba(23, 22, 20, 0.04) 0 4px 20px 12px;
+}
+
+.atracoes-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+  gap: 32px;
+}
+
+.atracoes-first-column {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+
+  p {
+    margin: 16px 0px 0px;
+  }
+}
+
+.diviser {
+  width: 100%;
+  margin: 12px 0px;
+  border-bottom: 2px solid #ced0d4;
+}
+
+.atracoes-second-column {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 12px;
+
+  .atracoes-info,
+  .atracoes-review {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 2px solid #ced0d4;
+    padding: 12px 20px;
+
+    .info-and-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.see-reviews {
+  text-align: center;
+  cursor: pointer;
+  color: #006ce4;
+}
+
+h1 {
+  font-family: "NATS-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+span {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+// ##########  DRAWBAR ############
+
+app-user-evaluation{
+  width: 100%;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.45);
+  backdrop-filter: blur(1px);
+}
+
+#reviews-page{
+  position: absolute;
+  width: 61.7vw;
+  height: 100%;
+  right: 0px;
+
+  display: flex;
+  flex-direction: row;
+  //background-color: black;
+}
+
+.close-reviews-button{
+  width: 3.85vw;
+  height: 3.85vw;
+  background-color: rgba($color: #6A9EDA, $alpha: 1.0);
+  border: none;
+  color: #ffffff;
+  border-radius: 5px 0px 0px 5px;
+  margin-top: 4vh;
+}
+
+.close-reviews-button:hover{
+  background-color: #4d8cd3;
+  cursor: pointer;
+} 
+

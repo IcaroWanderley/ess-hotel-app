@@ -12,9 +12,11 @@ $my-custom-typography: mat.define-typography-config(
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   font-family: "NATS-Regular";
 }
+
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
